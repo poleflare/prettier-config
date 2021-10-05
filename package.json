@@ -1,5 +1,5 @@
 {
-  "name": "@oftbyte/prettier-config",
+  "name": "@softbyte/prettier-config",
   "version": "0.0.0-development",
   "main": "index.json",
   "repository": "git@github.com:poleflare/prettier-config.git",
