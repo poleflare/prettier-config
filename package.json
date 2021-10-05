@@ -5,6 +5,7 @@
   "repository": "git@github.com:poleflare/prettier-config.git",
   "author": "Anders Quist <anders@qinfo.se> (https://softbyte.io/)",
   "license": "MIT",
+  "private": false,
   "files": [
     "index.json"
   ],
