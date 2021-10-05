@@ -1,0 +1,43 @@
+{
+  "name": "@oftbyte/prettier-config",
+  "version": "0.0.0-development",
+  "main": "index.json",
+  "repository": "git@github.com:poleflare/prettier-config.git",
+  "author": "Anders Quist <anders@qinfo.se> (https://softbyte.io/)",
+  "license": "MIT",
+  "files": [
+    "index.json"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/github": "^8.0.1",
+    "@semantic-release/npm": "^8.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.0",
+    "prettier": "^2.4.1",
+    "semantic-release": "^18.0.0",
+    "semantic-release-contributors": "^3.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,mjs,ts,jsx,tsx}": [
+      "prettier --write"
+    ]
+  }
+}
